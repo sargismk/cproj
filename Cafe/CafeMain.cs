@@ -91,6 +91,7 @@ namespace Cafe
                         String comment = Console.ReadLine();
                         Review rev = new Review(user, cafe, rate, comment);
                         rev.AddReview(rev);
+
                         Console.WriteLine("Thank you! \nIf you want to quit, type 'Q'! \nIf you want to continue searching cafes, press Enter!");
                         answer = Console.ReadLine().ToLower();
                         if (answer == "q")

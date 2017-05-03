@@ -12,20 +12,25 @@ namespace Cafe
         public String web { get; set; }
         public String number { get; set; }
         public String openTimes { get; set; }
+        public Double rate { get; set; }
+        public int rates { get; set; }
 
-        public Cafes(String name, Adress adress, String web, String number, String openTimes)
+        public Cafes(String name, Adress adress, String web, String number, String openTimes, Double rate, int rates)
         {
             this.name = name;
             this.adress = adress;
             this.web = web;
             this.number = number;
             this.openTimes = openTimes;
+            this.rate = rate;
+            this.rates = rates;
         }
         public void Print()
         {
-            Console.WriteLine(this.name + "\n" + "Adress:"+  this.adress.city + " " + this.adress.street + " "
-                        + this.adress.num + "\n" + "Web adress:" +this.web + "\n" + "Phone number:" + this.number + "\n" + "Open at:" + this.openTimes);
+            Console.WriteLine(this.name + "\n" + "Adress:" + this.adress.city + " " + this.adress.street + " "
+                        + this.adress.num + "\n" + "Web adress:" + this.web + "\n" + "Phone number:" + this.number + "\n" + "Open at:" + this.openTimes);
         }
         
+
     }
 }

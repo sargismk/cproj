@@ -20,8 +20,9 @@ namespace Cafe
         public void Save(Cafes cafe)
         {
             Favourite.Add(cafe);
+            Console.WriteLine("Saved!");
         }
-        public void PrintList()
+        public void PrintFavourite()
         {
             foreach (var cafe in Favourite)
             {

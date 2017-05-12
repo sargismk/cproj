@@ -13,17 +13,17 @@ namespace Cafe
             List<Cafes> cafeList = new List<Cafes>();
             List<Review> reviews = new List<Review>();
             List<User> users = new List<User>();
-            Adress adress1 = new Adress("Erevan", "Saryan", 24, 51.3, -0.1);
-            Cafes cafe1 = new Cafes("Cafe Lounge", adress1, "http://www.lounge.com", "+374 10 20 34 44", "10:00 - 22:00", 0.0, 1);
+            Adress adress1 = new Adress("Erevan", "Moskovyan", 3, 40.184152, 44.522341);
+            Cafes cafe1 = new Cafes("LOFT", adress1, "http://www.loft.am", "+374 10 20 34 44", "10:00 - 22:00", 0.0, 1);
             cafeList.Add(cafe1);
-            Adress adress2 = new Adress("Erevan", "Tumayan", 13, 78.6553, 45.1);
+            Adress adress2 = new Adress("Erevan", "Tumayan", 35, 40.186701, 44.511039);
             Cafes cafe2 = new Cafes("Jazzve", adress2, "http://www.jazzve.com", "+374 10 53 35 35", "09:00 - 23:00", 0.0, 1);
             cafeList.Add(cafe2);
-            Adress adress3 = new Adress("Erevan", "Amiryan", 17, 45.78, 76.1);
+            Adress adress3 = new Adress("Erevan", "Amiryan", 4, 40.179177, 44.51061);
             Cafes cafe3 = new Cafes("Green Bean", adress3, "http://www.gbcafearmenia.com", "+374 10 55 44 78", "07:00 - 00:00", 0.0, 1);
             cafeList.Add(cafe3);
-            Adress adress4 = new Adress("Erevan", "Tumanyan", 31, 51.2, -92.189456);
-            Cafes cafe4 = new Cafes("Van Gogh", adress4, "http://www.vangogh.am", "+374 91 414816", "10:00 - 03:00", 0.0, 1);
+            Adress adress4 = new Adress("Erevan", "Grigor Lusavorich str.", 31, 40.17384, 44.50569);
+            Cafes cafe4 = new Cafes("El Sky", adress4, "http://www.elskybar.am", "+374 91 414816", "10:00 - 03:00", 0.0, 1);
             cafeList.Add(cafe4);
         X:
             Console.Write("Enter your name: ");
@@ -97,6 +97,11 @@ namespace Cafe
                                     Console.WriteLine("" + i + ") " + cafes.name);
                                     i++;
                                 }
+                            }
+                            if (i == 1)
+                            {
+                                Console.WriteLine("No cafes found nearby!");
+                                goto B;
                             }
                             i = 1;
                             Console.Write("Choose a cafe, enter its name: ");
@@ -187,6 +192,11 @@ namespace Cafe
                                     Console.WriteLine("" + i + ") " + cafes.name);
                                     i++;
                                 }
+                            }
+                            if (i == 1)
+                            {
+                                Console.WriteLine("No cafes found nearby!");
+                                goto B;
                             }
                             i = 1;
                             Console.Write("Choose a cafe, enter its name: ");

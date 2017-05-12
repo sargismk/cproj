@@ -20,11 +20,9 @@ namespace Cafe
             this.rate = rate;
             this.comment = comment;
         }
-
-        List<Review> reviews = new List<Review>();
-        public void AddReview(Review review)
+        public void RevPrint()
         {
-            reviews.Add(review);
+            Console.WriteLine("Users name: " + user.name + "\n" + "Rate: " + rate + "\n" + "Comment about cafe: " + comment + "\n");
         }
     }
 }

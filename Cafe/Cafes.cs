@@ -30,7 +30,5 @@ namespace Cafe
             Console.WriteLine(this.name + "\n" + "Adress:" + this.adress.city + " " + this.adress.street + " "
                         + this.adress.num + "\n" + "Web adress:" + this.web + "\n" + "Phone number:" + this.number + "\n" + "Open at:" + this.openTimes);
         }
-        
-
     }
 }

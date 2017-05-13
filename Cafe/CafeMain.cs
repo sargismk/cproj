@@ -365,7 +365,7 @@ namespace Cafe
                             }
                             if (i == 1)
                             {
-                                Console.WriteLine("No cafes found nearby!");
+                                Console.WriteLine("No cafes found nearby! ");
                                 goto B;
                             }
                             i = 1;

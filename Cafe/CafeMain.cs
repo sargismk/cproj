@@ -412,13 +412,9 @@ namespace Cafe
                         Console.WriteLine("If you want to login as another user, type 'C'!");
                         answer = Console.ReadLine().ToLower();
                         if (answer == "q")
-                        {
                             return;
-                        }
                         if (answer == "c")
-                        {
                             goto X;
-                        }
                     }
                     j++;
                 }
